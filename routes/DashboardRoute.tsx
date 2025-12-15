@@ -6,6 +6,7 @@ import {
   IconNews,
   IconFile,
   IconLock,
+  IconGitMerge,
 } from "@tabler/icons-react";
 
 //import custom type
@@ -50,5 +51,12 @@ export const DashboardMenu: MenuItemType[] = [
       { id: uuid(), name: "Maintenance", link: "maintenance" },
       { id: uuid(), name: "404 Error", link: "not-found" },
     ],
+  },
+
+  {
+    id: uuid(),
+    title: "Changelog",
+    link: "/changelog",
+    icon: <IconGitMerge size={20} strokeWidth={1.5} />,
   },
 ];
